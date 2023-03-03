@@ -1,4 +1,4 @@
-JavaScript Promises
+/* JavaScript Promises
 Using catch() with Promises
 
 One way to write cleaner code is to follow a principle called separation of
@@ -11,7 +11,7 @@ promise it was called on if no appropriate handler was provided. This
 implementation allows us to separate our resolved logic from our rejected logic.
 Instead of passing both handlers into one .then(), we can chain a second .then()
 with a failure handler to a first .then() with a success handler and both cases
-will be handled.
+will be handled.*/
 
 prom
   .then((resolvedValue) => {
@@ -21,6 +21,7 @@ prom
     console.log(rejectionReason);
   });
 
+  /*
 Since JavaScript doesn’t mind whitespace, we follow a common convention of
 putting each part of this chain on a new line to make it easier to read. To
 create even more readable code, we can use a different promise function:
@@ -32,6 +33,7 @@ rejection. Using .catch() accomplishes the same thing as using a .then() with
 only a failure handler.
 
 Let’s look at an example using .catch():
+*/
 
 prom
   .then((resolvedValue) => {
@@ -41,6 +43,7 @@ prom
     console.log(rejectionReason);
   });
 
+  /*
 Let’s break down what’s happening in the example code:
 
     prom is a promise which randomly either resolves with 'Yay!' or rejects with
@@ -72,3 +75,4 @@ handleFailure().
 We set our inventory of sunglasses to 0, so the order shouldn’t go through.
 Let’s make sure our code has the expected results. Type node app.js in the
 terminal and hit enter.
+*/

@@ -1,4 +1,4 @@
-JavaScript Promises
+/* JavaScript Promises
 Consuming Promises
 
 The initial state of an asynchronous promise is pending, but we have a guarantee
@@ -30,3 +30,4 @@ a promise with the same settled value as the promise it was called on.
 One important feature of .then() is that it always returns a promise.
 We’ll return to this in more detail in a later exercise and explore why it’s
 so important.
+*/
